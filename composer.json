@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4" : {
-            "Fleks\\Db" : "src"
+            "Fleks\\Db\\" : "src"
         }
     }
 }

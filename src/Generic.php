@@ -149,9 +149,9 @@ class Generic
      * @param int $fetchMode {@link http://php.net/manual/en/pdostatement.fetch.php}
      * @return mixed
      */
-    public function fetchAll($query, $bind = [], int $fetchMode = PDO::FETCH_ASSOC)
+    public function fetchRow($query, $bind = [], int $fetchMode = PDO::FETCH_ASSOC)
     {
         $stmt = $this->execute($query, $bind);
-        return $stmt ? $stmt->fetchAll($fetchMode) : [];
+        return $stmt ? $stmt->fetch($fetchMode) : null;
     }
 }

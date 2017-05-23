@@ -3,12 +3,12 @@
 /**
  * MySQL PDO wrapper
  *
- * @package    addsite/db
- * @author     Wubbo Bos <wubbo@addnoise.nl>
- * @copyright  Copyright (c) Add Noise
+ * @package    fleks-db
+ * @author     Wubbo Bos <wubbo@wubbobos.nl>
+ * @copyright  Copyright (c) Wubbo Bos
  */
 
-namespace Addsite\Db;
+namespace Fleks\Db;
 
 /**
  * MySQL PDO wrapper
