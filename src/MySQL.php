@@ -6,6 +6,8 @@
  * @package    fleks-db
  * @author     Wubbo Bos <wubbo@wubbobos.nl>
  * @copyright  Copyright (c) Wubbo Bos
+ * @license    GPL
+ * @link       https://github.com/wubmeister/fleks-db
  */
 
 namespace Fleks\Db;
