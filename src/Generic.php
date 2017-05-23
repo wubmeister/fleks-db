@@ -156,4 +156,19 @@ class Generic
         $stmt = $this->execute($query, $bind);
         return $stmt ? $stmt->fetch($fetchMode) : null;
     }
+
+    /**
+     * Executes the passed queries in one transaction
+     *
+     * @param array $queries The queries
+     * @return bool Returns TRUE on success or FALSE on failure.
+     */
+    public function commitTransaction($queries)
+    {
+        $this->pdo->beginTransaction();
+        foreach ($queries as $query) {
+            $this->pdo->exec($query);
+        }
+        return $this->pdo->commit();
+    }
 }
